@@ -24,7 +24,7 @@ app.get('/', (req, res)=> {
         const data = response.data
         // console.log(data)
         const {name,top_subjects ,top_work,work_count}=data.docs[0];
-        console.log(name,top_subjects ,top_work,work_count);
+        // console.log(name,top_subjects ,top_work,work_count);
      res.render("index",{name:name,top_subjects:top_subjects,top_work:top_work, work_count:work_count})
     })
     
