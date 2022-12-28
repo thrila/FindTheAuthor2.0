@@ -1,0 +1,204 @@
+/* __________________
+------------------
+fonts
+__________________
+------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* __________________
+------------------
+page reseting and variables dclaring
+__________________
+------------------ */
+:root{
+    --primary-background-color : #2FC13E;
+    --secondary-background-color: #2FC13E;
+    --text-color: #0C0F0C;
+    --text-color-secondary:white;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Cabin', sans-serif;
+}
+/* __________________
+------------------
+nav Bar
+__________________
+------------------ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-background-color);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+
+nav p {
+    padding-left:3%;
+    font-size: 1.5rem;
+    color: var(--text-color-secondary);
+    font-family: 'Indie Flower', cursive;
+}
+nav p:hover{
+    transition: .4s;
+    font-size: 2.1rem;
+}
+nav ul {
+   list-style-type: none;
+   font-size: 1.5rem;
+   font-family: 'Indie Flower', cursive;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+}
+nav ul li a:hover{
+    color: var(--text-color);
+}
+#container{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    width: auto;
+    
+}
+#form {
+    width: 60%;
+    /* border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--primary-background-color); */
+}
+form{
+    min-width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-bottom: 1px  solid var(--primary-background-color);
+    border-left: 4px  solid var(--primary-background-color);
+    margin: 0;
+}
+#form input {
+    margin: 0;
+    height: 30px;
+    width: 75%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    overflow: hidden;
+    font-size: 1rem;
+}
+#form button{
+    border-radius: 0 5px 5px 0;
+    margin: 0;
+    height: 32px;
+    width: 20%;
+    border: none;
+    background-color: transparent;
+}
+#form button:hover{
+    transition: .4s;
+    background-color: var(--text-color);
+    color: #fff;
+}
+#form button i {
+    font-size: 1rem;
+    color: var(--primary-background-color);
+}
+.authorName{
+    display: flex;
+    
+}
+#result {
+    display: flex;
+    min-height: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 3%;
+    flex-flow: wrap row;
+}
+.authorName .title {
+    padding: 0 10px 0 0;
+}
+.list{
+    list-style-type: none;
+}
+.list-el{
+    padding: 0 0 10px 0;
+    border-bottom: 1px black solid;
+}
+/* the end  */
+.authorName{
+    /* width: 80%; */
+    height: 50px;
+    margin: 5px 10px ;
+    border-left: 1px var(--secondary-background-color)  solid;
+    border-radius: 5px;
+    flex-basis: 80%;
+    
+}
+
+
+.title{
+    margin-left: 3%;
+
+}
+.list-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.list-title{
+    display: block;
+    font-size: 2rem;
+}
+.list {
+   min-height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.list-el {
+    max-height: 30px ;
+    /* border:  1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+footer{
+    height: 70px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    background-color: var(--primary-background-color);
+    
+}
+footer a {
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+}
